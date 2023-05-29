@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+:root {
+    --main-background: #111d2e;
+    --main-title-color:#588ceb;
+    --main-text-color: #ffffff;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--main-background);
+    color: var(--main-text-color);
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1300px;
+}
+
+
+/* login page */
+.login-form-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    align-items: center;
+}
+
+.login-form-inner {
+    width: 100%;
+}
+
+.login-form-inner input {
+    width: 100%;
+}

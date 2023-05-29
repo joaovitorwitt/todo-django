@@ -2,8 +2,29 @@
 
 {% block body %}
 
-<div class="container">
+    <div class="container">
+        <div class="login-form-wrapper">
+            <div class="login-form-inner">
+                <div class="login-form-data">
+                    <h1>Welcome</h1>
+                    <p>New here? <a href="{% url 'website:register' %}">Register</a></p>
+                </div>
     
-</div>
+                <form action="{% url 'website:login' %}" method="post">
+                    {% csrf_token %}
+                    <div class="input-wrapper">
+                        <input type="text" name="nickname" placeholder="Nickname" autocomplete="off">
+                    </div>
+    
+                    <div class="input-wrapper">
+                        <input type="password" placeholder="Password" name="password" autocomplete="off">
+                    </div>
+    
+                    <input type="submit" value="Login" class="login-button">
+    
+                </form>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
